@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox spacing="20" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SubscriptionC">
+    <Text text="Register for Java Hardcore Training">
+        <font>
+            <Font size="20.0" />
+        </font>
+    </Text>
+
+    <GridPane hgap="10" vgap="10">
+        <children>
+            <Label text="First Name:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <TextField fx:id="tfFirstName" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <Label text="Last Name:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <TextField fx:id="tfLastName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        </children>
+    </GridPane>
+
+    <VBox spacing="10">
+        <CheckBox fx:id="cbJavaFx" text="JavaFX - Properties and Bindings" />
+        <CheckBox fx:id="cbJavaConcurrency" text="JavaFX - Concurrency" />
+        <CheckBox fx:id="cbJavaMaster" text="Java - Master of the Universe" />
+    </VBox>
+
+    <HBox alignment="CENTER_RIGHT">
+        <Button fx:id="btSubmit" onAction="#btSubmitOnAction" text="Submit" />
+    </HBox>
+
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>
